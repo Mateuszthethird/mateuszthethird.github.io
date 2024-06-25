@@ -1,0 +1,100 @@
+
+body {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 30% 35% 35%;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "header nav nav"
+        "main main main"
+        "footer footer footer";
+
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    grid-area: header;
+    padding: 10px;
+}
+
+#Logo{ 
+    padding-left:30px;
+    height: 60px;
+}
+
+
+
+nav {
+    background-color: #333;
+    grid-area: nav;
+    padding: 10px;
+}
+
+.Nav-Bar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-right: 40px;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.Nav-Bar li{
+    float: right;
+}
+
+
+#Selected{
+    color: #4995b6;
+
+}
+.Nav-Bar a{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    padding-left: 20px; 
+    padding-right: 20px;
+    padding-top: 15px;
+    display: block;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.Nav-Bar a:hover,
+.Nav-Bar a.active{
+    color: #4995b6;
+}
+
+
+main {
+    background-color: #333;
+    grid-area: main;
+    color: #fff;
+    padding-top: 8px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.twitter-timeline{
+    padding-left: 40px;
+    padding-right: 40px;
+    float: right;
+}
+
+.container{
+    display: flex;
+    max-width: 300px;
+}
+
+footer {
+    background-color: #333;
+    grid-area: footer;
+    color: #fff;
+    padding: 10px;
+}
+
